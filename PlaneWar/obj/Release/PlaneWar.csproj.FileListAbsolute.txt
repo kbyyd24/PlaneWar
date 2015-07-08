@@ -1,0 +1,9 @@
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Release\PlaneWar.exe.config
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Release\PlaneWar.exe
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Release\PlaneWar.pdb
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.Properties.Resources.resources
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.Resources.resources
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.csproj.GenerateResource.Cache
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.exe
+c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.pdb
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.csprojResolveAssemblyReference.cache
