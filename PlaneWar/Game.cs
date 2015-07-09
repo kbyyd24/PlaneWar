@@ -39,7 +39,7 @@ namespace PlaneWar
             player.Draw(e.Graphics);
         }*/
 
-        private void Game_KeyUp(object sender, KeyEventArgs e)//响应单次按钮事件
+        private void Game_KeyUp(object sender, KeyEventArgs e)//释放按键
         {
             Keys key = e.KeyCode;
             if (Keys.A == key || Keys.Left == key)
@@ -60,7 +60,7 @@ namespace PlaneWar
             }
         }
 
-        private void Game_KeyDown(object sender, KeyEventArgs e)//响应持续按钮事件
+        private void Game_KeyDown(object sender, KeyEventArgs e)//按下按键
         {
             Keys key = e.KeyCode;
             if (Keys.A == key || Keys.Left == key)
