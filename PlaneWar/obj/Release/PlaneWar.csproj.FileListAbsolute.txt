@@ -7,7 +7,7 @@ c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Rele
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.exe
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.pdb
 C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.csprojResolveAssemblyReference.cache
-C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.Game.resources
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Release\zh-Hans\PlaneWar.resources.dll
-C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.Game.zh-Hans.resources
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\zh-Hans\PlaneWar.resources.dll
+C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.GameForm.resources
+C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.GameForm.zh-Hans.resources

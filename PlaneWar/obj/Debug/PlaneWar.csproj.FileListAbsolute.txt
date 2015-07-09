@@ -7,7 +7,7 @@ c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Debu
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.Resources.resources
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.exe
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.pdb
-C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.Game.resources
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Debug\zh-Hans\PlaneWar.resources.dll
-C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.Game.zh-Hans.resources
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\zh-Hans\PlaneWar.resources.dll
+C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.GameForm.resources
+C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.GameForm.zh-Hans.resources

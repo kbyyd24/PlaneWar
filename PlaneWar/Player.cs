@@ -4,34 +4,75 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PlaneWar
 {
     class Player
     {
         private Image myplane;
+        private Image redplane;
+        private Image notredplane;
         private Image headImage;
         private int score = 0;
         private int blood = 100;
-        private int plane_x = 181;
+        private int plane_x = 175;
         private int plane_y = 500;
         private String name = "高悦翔";
 
         public Player()
         {
-            myplane = Resources.plane;
+            redplane = Resources.planeRedTail;
+            notredplane = Resources.plane;
+            myplane = notredplane;
             headImage = Resources.head;
         }
 
-        public void MovePlane(int x, int y)
+        public void checkCoords()
         {
-            if (0 <= plane_x + x && 363 >= plane_x + x)
+            if (plane_x > 362)
             {
-                plane_x += x;
+                plane_x = 362;
             }
-            if (0 <= plane_y + y && 540 >= plane_y + y)
+        }
+
+        public void MovePlane()
+        {
+            myplane = myplane == redplane ? notredplane : redplane;
+
+            if (Keyboard.IsKeyDown(Keys.A) || Keyboard.IsKeyDown(Keys.Left))
             {
-                plane_y += y;
+                myplane = Resources.planeLeft;
+                plane_x -= 13;
+                if (plane_x < 0)
+                {
+                    plane_x = 0;
+                }
+            }
+            if (Keyboard.IsKeyDown(Keys.D) || Keyboard.IsKeyDown(Keys.Right))
+            {
+                myplane = Resources.planeRight;
+                plane_x += 13;
+                if (plane_x > 370)
+                {
+                    plane_x = 370;
+                }
+            }
+            if (Keyboard.IsKeyDown(Keys.W) || Keyboard.IsKeyDown(Keys.Up))
+            {
+                plane_y -= 13;
+                if (plane_y < 0)
+                {
+                    plane_y = 0;
+                }
+            }
+            if (Keyboard.IsKeyDown(Keys.S) || Keyboard.IsKeyDown(Keys.Down))
+            {
+                plane_y += 13;
+                if (plane_y > 535)
+                {
+                    plane_y = 535;
+                }
             }
         }
 
@@ -66,8 +107,16 @@ namespace PlaneWar
 
         public void Draw(Graphics g)
         {
-            //画出飞机和头像
-            g.DrawImage(myplane, new Point(plane_x, plane_y));
+            //画出飞机
+            if (blood > 0)
+            {
+                g.DrawImage(myplane, new Point(plane_x, plane_y));
+            }
+            else if (blood <= 0)
+            {
+                g.DrawImage(myplane, new Point(0, -500));
+            }
+            //画出头像
             g.DrawImage(headImage, new Point(10, 10));
             
             //画出并填充血量条

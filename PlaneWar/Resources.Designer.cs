@@ -123,9 +123,29 @@ namespace PlaneWar {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap planeLeft {
+            get {
+                object obj = ResourceManager.GetObject("planeLeft", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap planeRedTail {
             get {
                 object obj = ResourceManager.GetObject("planeRedTail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap planeRight {
+            get {
+                object obj = ResourceManager.GetObject("planeRight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
