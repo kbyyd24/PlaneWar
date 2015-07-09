@@ -35,6 +35,35 @@ namespace PlaneWar
             }
         }
 
+        public Boolean ChangeBlood(int change)
+        {
+            Boolean flag = false;
+            if (0 < blood + change && 100 >= blood + change)
+            {
+                blood += change;
+                flag = true;
+            }
+            else if (0 >= blood + change)
+            {
+                blood = 0;
+                flag = false;
+            }
+            else if (100 < blood + change)
+            {
+                blood = 100;
+                flag = true;
+            }
+            return flag;
+        }
+
+        public void ChangeScore(int change)
+        {
+            if (0 <= score + change)
+            {
+                score += change;
+            }
+        }
+
         public void Draw(Graphics g)
         {
             //画出飞机和头像
