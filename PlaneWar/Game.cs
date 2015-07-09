@@ -28,11 +28,6 @@ namespace PlaneWar
         {
             bg.Move();
             Graphics g = this.CreateGraphics();
-            Game_Paint(g);
-        }
-
-        private void Game_Paint(Graphics g)
-        {
             bg.Draw(g);
         }
         /*

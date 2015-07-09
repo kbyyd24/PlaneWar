@@ -7,3 +7,4 @@ c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Rele
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.exe
 c:\users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.pdb
 C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.csprojResolveAssemblyReference.cache
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Release\PlaneWar.Game.resources
