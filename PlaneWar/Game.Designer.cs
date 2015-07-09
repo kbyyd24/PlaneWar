@@ -41,17 +41,19 @@
             // 
             // Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 592);
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackgroundImage = global::PlaneWar.Resources.background4;
             this.Cursor = System.Windows.Forms.Cursors.No;
             this.DoubleBuffered = true;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.HelpButton = true;
+            this.KeyPreview = true;
             this.Name = "Game";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "高悦翔的C#";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Game_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Game_KeyUp);
             this.ResumeLayout(false);
 
         }
