@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bullet.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Keyboard.cs" />
     <Compile Include="Player.cs" />
@@ -55,12 +56,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Background.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Background.cs" />
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +96,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\planeRedTail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planeRight.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\background1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -107,22 +114,31 @@
     <None Include="Resources\background4.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bul02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bul02_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bul02_-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bul02_60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bul02_-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en_bul01.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\plane.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\planeRedTail.png" />
+    <None Include="Resources\planeLeft.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\head.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\005CukgZtw1esx5q9p221g308c03ywyj.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\planeRight.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\planeLeft.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

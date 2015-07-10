@@ -20,6 +20,30 @@ namespace PlaneWar
         private int plane_y = 500;
         private String name = "高悦翔";
 
+        public int PLANEX
+        {
+            get
+            {
+                return plane_x;
+            }
+            set
+            {
+                plane_x = value;
+            }
+        }
+
+        public int PLANEY
+        {
+            get
+            {
+                return plane_y;
+            }
+            set
+            {
+                plane_y = value;
+            }
+        }
+
         public Player()
         {
             redplane = Resources.planeRedTail;

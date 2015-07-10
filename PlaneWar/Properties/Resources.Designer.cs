@@ -59,15 +59,5 @@ namespace PlaneWar.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _005CukgZtw1esx5q9p221g308c03ywyj {
-            get {
-                object obj = ResourceManager.GetObject("005CukgZtw1esx5q9p221g308c03ywyj", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
