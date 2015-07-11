@@ -10,11 +10,26 @@ namespace PlaneWar
     class Bullet//子弹
     {
         //static double pi = Math.PI;
-        public int bullet_x;
-        public int bullet_y;
-        public int angle;
-        public int distance;
-        public Image bulletImage;
+        private int bullet_x;
+        private int bullet_y;
+        private int angle;
+        private int distance;
+        private Image bulletImage;
+
+        public int BulX
+        {
+            get
+            {
+                return bullet_x;
+            }
+        }
+        public int BulY
+        {
+            get
+            {
+                return bullet_y;
+            }
+        }
 
         public Bullet(int x, int y, int angle, int distance)
         {

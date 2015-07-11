@@ -14,6 +14,7 @@ namespace PlaneWar
         Player player = new Player();
         List<Bullet> bulletList = new List<Bullet>();
         List<Enemy> enemyList = new List<Enemy>();
+        List<EnemyBullet> ebList = new List<EnemyBullet>();
         bool IsGetsGun = false;
 
         public void Move()
@@ -23,6 +24,7 @@ namespace PlaneWar
             player.MovePlane();
             ProduceBullet();
             ProduceEnemy();
+            ProduceEnemyBullet();
         }
 
         public void Draw(Graphics e)
@@ -31,6 +33,7 @@ namespace PlaneWar
             MoveEnemy(e);
             MoveBullet(e);
             player.Draw(e);
+            MoveEnemyBullet(e);
         }
 
         public void ProduceBullet()
@@ -39,7 +42,26 @@ namespace PlaneWar
             {
                 if (!IsGetsGun)
                 {
-                    bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
+                    if (0 == bulletList.Count)
+                    {
+                        bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
+                    }
+                    else
+                    {
+                        if (bulletList[bulletList.Count - 1].BulX == player.PLANEX + 15)
+                        {
+                            int i = player.PLANEY - 10 - bulletList[bulletList.Count - 1].BulY;
+                            if (35 < i)
+                            {
+                                bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
+                            }
+                        }
+                        else
+                        {
+                            bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
+                        }
+                    }
+                    
                 }
                 else
                 {
@@ -58,7 +80,7 @@ namespace PlaneWar
             {
                 bulletList[i].Draw(g);
                 bulletList[i].Move();
-                if (bulletList[i].bullet_y <= -10)
+                if (bulletList[i].BulY <= -10)
                 {
                     bulletList.Remove(bulletList[i]);
                 }
@@ -84,6 +106,38 @@ namespace PlaneWar
                 if (630 <= enemyList[i].ENEMY_Y)
                 {
                     enemyList.Remove(enemyList[i]);
+                }
+            }
+        }
+
+        public void ProduceEnemyBullet()
+        {
+            Random rand = new Random(Guid.NewGuid().GetHashCode());
+            for (int i = 0; i < enemyList.Count; i++)
+            {
+                if (0 == rand.Next(20))
+                {
+                    int x = enemyList[i].ENEMY_X + 20;
+                    int y = enemyList[i].ENEMY_Y + 20;
+                    EnemyBullet eb = new EnemyBullet(x, y, x - (player.PLANEX + 20), y - (player.PLANEY + 20));
+                    ebList.Add(eb);
+                }
+            }
+        }
+
+        public void MoveEnemyBullet(Graphics g)
+        {
+            for (int i = 0; i < ebList.Count; i++)
+            {
+                ebList[i].Draw(g);
+                ebList[i].Move();
+                if (630 < ebList[i].ebY || -10 > ebList[i].ebY)
+                {
+                    ebList.Remove(ebList[i]);
+                }
+                else if (-10 > ebList[i].ebX || 420 < ebList[i].ebX)
+                {
+                    ebList.Remove(ebList[i]);
                 }
             }
         }

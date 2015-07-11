@@ -15,6 +15,14 @@ namespace PlaneWar
         private int score;
         private Image plane;
 
+        public int ENEMY_X
+        {
+            get
+            {
+                return enemy_x;
+            }
+        }
+
         public int ENEMY_Y
         {
             get
