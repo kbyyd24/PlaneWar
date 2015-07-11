@@ -30,6 +30,13 @@ namespace PlaneWar
                 return bullet_y;
             }
         }
+        public Image BulletImage
+        {
+            get
+            {
+                return bulletImage;
+            }
+        }
 
         public Bullet(int x, int y, int angle, int distance)
         {

@@ -22,12 +22,37 @@ namespace PlaneWar
                 return enemy_x;
             }
         }
-
         public int ENEMY_Y
         {
             get
             {
                 return enmey_y;
+            }
+        }
+        public Image PLANE
+        {
+            get
+            {
+                return plane;
+            }
+        }
+
+        public int Score
+        {
+            get
+            {
+                return score;
+            }
+        }
+        public int Blood
+        {
+            get
+            {
+                return blood;
+            }
+            set
+            {
+                blood -= value;
             }
         }
 
@@ -65,5 +90,6 @@ namespace PlaneWar
         {
             enmey_y += 6 - score ;
         }
+
     }
 }

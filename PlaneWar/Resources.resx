@@ -130,6 +130,27 @@
   <data name="background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\background4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bloodbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bloodbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bomb0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bomb0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bomb1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bomb1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bomb2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bomb2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bomb3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bomb3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bomb4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bomb4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bomb5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bomb5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bul02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\bul02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +178,9 @@
   <data name="fighterYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\fighterYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gameover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\gameover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="head" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\head.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,5 +195,8 @@
   </data>
   <data name="planeRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\planeRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shotgun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\shotgun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

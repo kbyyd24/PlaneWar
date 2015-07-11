@@ -31,23 +31,22 @@ namespace PlaneWar
             }
         }
 
+        public Image EBimage
+        {
+            get
+            {
+                return ebImage;
+            }
+        }
+
         public EnemyBullet(int x, int y, int disX, int disY)
         {
             ebx = x;
             eby = y;
             ebImage = Resources.en_bul01;
-            if (0 != disY)
-            {
-                double a = Math.Sqrt((disY) * (disY) + (disX) * (disX));
-                movey = -(int)((disY) * 6 / a);
-                movex = -(int)((disX) * 6 / a);
-            }
-            else
-            {
-                movey = 0;
-                movex = 6;
-            }
-
+            double a = Math.Sqrt((disY) * (disY) + (disX) * (disX));
+            movey = -(int)((disY) * 6 / a);
+            movex = -(int)((disX) * 6 / a);
         }
 
         public void Draw(Graphics g)

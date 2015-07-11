@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bomb.cs" />
     <Compile Include="Bullet.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="EnemyBullet.cs" />
@@ -150,6 +151,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fighterYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloodbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shotgun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

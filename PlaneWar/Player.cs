@@ -44,6 +44,22 @@ namespace PlaneWar
             }
         }
 
+        public int Score
+        {
+            set
+            {
+                score += value;
+            }
+        }
+
+        public Image Myplane
+        {
+            get
+            {
+                return myplane;
+            }
+        }
+
         public Player()
         {
             redplane = Resources.planeRedTail;
@@ -99,7 +115,11 @@ namespace PlaneWar
                 }
             }
         }
-
+        /*
+         * return :
+         * false: distroy
+         * true: alive
+         */
         public Boolean ChangeBlood(int change)
         {
             Boolean flag = false;
@@ -118,6 +138,7 @@ namespace PlaneWar
                 blood = 100;
                 flag = true;
             }
+            Console.WriteLine("blood: " + blood);
             return flag;
         }
 
@@ -136,9 +157,10 @@ namespace PlaneWar
             {
                 g.DrawImage(myplane, new Point(plane_x, plane_y));
             }
-            else if (blood <= 0)
+            else if (0 == blood)
             {
-                g.DrawImage(myplane, new Point(0, -500));
+                plane_x = -1;
+                plane_y = -1;
             }
             //画出头像
             g.DrawImage(headImage, new Point(10, 10));
@@ -152,7 +174,7 @@ namespace PlaneWar
             g.FillRectangle(Brushes.Green, 11, 111, 100, 9);
 
             //显示信息
-            g.DrawString("Player: " + name, new Font("微软雅黑", 9, FontStyle.Bold), Brushes.Yellow, new Point(10, 130));
+            g.DrawString("Player: " + name, new Font("微软雅黑", 9, FontStyle.Bold), Brushes.Blue, new Point(10, 130));
             g.DrawString("Score: " + score, new Font("微软雅黑", 9, FontStyle.Bold), Brushes.Yellow, new Point(10, 150));
         }
     }
