@@ -30,26 +30,30 @@ namespace PlaneWar
                     break;
                 case 60:
                     bulletImage = Resources.bul02_30;//三十度角
-                    bullet_x += 1;
+                    bullet_x += 10;
                     bullet_y -= 17;
                     break;
                 case -60:
                     bulletImage = Resources.bul02__30;//60
-                    bullet_x -= 20;
+                    bullet_x -= 10;
                     bullet_y -= 17;
                     break;
                 case 30:
                     bulletImage = Resources.bul02_60;//60
-                    bullet_x += 12;
+                    bullet_x += 20;
                     bullet_y -= 12;
                     break;
                 case -30:
                     bulletImage = Resources.bul02__60;//60
-                    bullet_x -= 35;
+                    bullet_x -= 20;
                     bullet_y -= 12;
                     break;
                 default:
                     break;
+            }
+            if (bullet_y < -10)
+            {
+                bullet_y = -20;
             }
         }
 
@@ -66,23 +70,27 @@ namespace PlaneWar
                     bullet_y -= 17;
                     break;
                 case 60:
-                    bullet_x += 1;
+                    bullet_x += 10;
                     bullet_y -= 17;
                     break;
                 case -60:
-                    bullet_x -= 20;
+                    bullet_x -= 10;
                     bullet_y -= 17;
                     break;
                 case 30:
-                    bullet_x += 12;
+                    bullet_x += 20;
                     bullet_y -= 12;
                     break;
                 case -30:
-                    bullet_x -= 35;
+                    bullet_x -= 20;
                     bullet_y -= 12;
                     break;
                 default:
                     break;
+            }
+            if (bullet_y < -10)
+            {
+                bullet_y = -20;
             }
         }
     }

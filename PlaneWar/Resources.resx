@@ -148,6 +148,15 @@
   <data name="en_bul01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\en_bul01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fighterGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fighterGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fighterRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fighterRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fighterYellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fighterYellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="head" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\head.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
