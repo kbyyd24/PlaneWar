@@ -7,6 +7,10 @@ using System.Windows.Forms;
 
 namespace PlaneWar
 {
+    /*
+     * 键盘类，处理键盘事件
+     * @author 高悦翔
+     */
     class Keyboard
     {
         private static List<Keys> listKey = new List<Keys>();

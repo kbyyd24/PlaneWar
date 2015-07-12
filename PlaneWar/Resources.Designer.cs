@@ -61,6 +61,16 @@ namespace PlaneWar {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] background {
+            get {
+                object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap background1 {
@@ -167,6 +177,15 @@ namespace PlaneWar {
             get {
                 object obj = ResourceManager.GetObject("bomb5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream bombsound {
+            get {
+                return ResourceManager.GetStream("bombsound", resourceCulture);
             }
         }
         

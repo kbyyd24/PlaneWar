@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 
 namespace PlaneWar
 {
+    /*
+     * 爆炸类
+     * @author 高悦翔
+     */
     class Bomb
     {
-        //SoundPlayer sp = new SoundPlayer();
+        SoundPlayer sp = new SoundPlayer();
         private Image[] bombImage;
         private Point loc;
 
@@ -32,7 +36,7 @@ namespace PlaneWar
             bombImage[3] = Resources.bomb3;
             bombImage[4] = Resources.bomb4;
             bombImage[5] = Resources.bomb5;
-            //sp.Stream = Resoutces.bombsound;
+            sp.Stream = Resources.bombsound;
         }
 
         public void Draw(Graphics g)
@@ -47,7 +51,7 @@ namespace PlaneWar
 
         public void bombplay()
         {
-            //sp.Play();
+            sp.Play();
         }
 
     }

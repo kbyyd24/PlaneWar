@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace PlaneWar
 {
-    class Bullet//子弹
+    /*
+     * 子弹类
+     * @author 高悦翔
+     */
+    class Bullet
     {
         //static double pi = Math.PI;
         private int bullet_x;
@@ -84,7 +88,7 @@ namespace PlaneWar
             g.DrawImage(bulletImage, new Point(bullet_x, bullet_y));
         }
 
-        public void Move()
+        public void Move()//移动子弹，需改进
         {
             switch (this.angle)
             {

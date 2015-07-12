@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace PlaneWar
 {
+    /*
+     * 敌机类
+     * @author 高悦翔
+     */
     class Enemy
     {
         private int enemy_x;

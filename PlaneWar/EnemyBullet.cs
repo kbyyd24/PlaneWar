@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace PlaneWar
 {
+    /*
+     * 敌机子弹类
+     * @author 高悦翔
+     */
     class EnemyBullet
     {
         private int ebx;

@@ -8,6 +8,10 @@ using System.Windows.Forms;
 
 namespace PlaneWar
 {
+    /*
+     * 玩家类，处理玩家相关事务
+     * @ author: 高悦翔
+     */
     class Player
     {
         private Image myplane;
@@ -19,6 +23,7 @@ namespace PlaneWar
         private int plane_x = 175;
         private int plane_y = 500;
         private String name = "高悦翔";
+        private Boolean superGun = false;
 
         public int PLANEX
         {
@@ -52,6 +57,14 @@ namespace PlaneWar
             }
         }
 
+        public Boolean SuperGun
+        {
+            get
+            {
+                return superGun;
+            }
+        }
+
         public Image Myplane
         {
             get
@@ -68,7 +81,7 @@ namespace PlaneWar
             headImage = Resources.head;
         }
 
-        public void checkCoords()
+        public void checkCoords()//判断飞机的坐标是否飞出窗口
         {
             if (plane_x > 362)
             {
@@ -78,7 +91,7 @@ namespace PlaneWar
 
         public void MovePlane()
         {
-            myplane = myplane == redplane ? notredplane : redplane;
+            myplane = myplane == redplane ? notredplane : redplane;//unknown
 
             if (Keyboard.IsKeyDown(Keys.A) || Keyboard.IsKeyDown(Keys.Left))
             {
@@ -115,12 +128,8 @@ namespace PlaneWar
                 }
             }
         }
-        /*
-         * return :
-         * false: distroy
-         * true: alive
-         */
-        public Boolean ChangeBlood(int change)
+
+        public Boolean ChangeBlood(int change)//血量为0返回false，血量为正返回true
         {
             Boolean flag = false;
             if (0 < blood + change && 100 >= blood + change)
@@ -138,11 +147,10 @@ namespace PlaneWar
                 blood = 100;
                 flag = true;
             }
-            Console.WriteLine("blood: " + blood);
             return flag;
         }
 
-        public void ChangeScore(int change)
+        public void ChangeScore(int change)//修改得分
         {
             if (0 <= score + change)
             {
@@ -157,7 +165,7 @@ namespace PlaneWar
             {
                 g.DrawImage(myplane, new Point(plane_x, plane_y));
             }
-            else if (0 == blood)
+            else if (0 == blood)//血量为0，设置坐标为负
             {
                 plane_x = -1;
                 plane_y = -1;
@@ -176,6 +184,16 @@ namespace PlaneWar
             //显示信息
             g.DrawString("Player: " + name, new Font("微软雅黑", 9, FontStyle.Bold), Brushes.Blue, new Point(10, 130));
             g.DrawString("Score: " + score, new Font("微软雅黑", 9, FontStyle.Bold), Brushes.Yellow, new Point(10, 150));
+        }
+
+        public void getSuperGun()
+        {
+            superGun = true;
+        }
+
+        public void loseGun()
+        {
+            superGun = false;
         }
     }
 }
