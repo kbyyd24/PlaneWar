@@ -16,7 +16,7 @@ namespace PlaneWar
     class Game
     {
         Background background = new Background();
-        Player player = new Player();
+        Player player;
         List<Bullet> bulletList = new List<Bullet>();
         List<Enemy> enemyList = new List<Enemy>();
         List<EnemyBullet> ebList = new List<EnemyBullet>();
@@ -24,6 +24,27 @@ namespace PlaneWar
         BloodBox box = new BloodBox();
         Crasher crasher = new Crasher();
         Image gameOver = Resources.gameover;
+
+        public Boolean Blood
+        {
+            get
+            {
+                return player.ChangeBlood(0);
+            }
+        }
+
+        public string PName
+        {
+            get
+            {
+                return player.Name;
+            }
+        }
+
+        public Game(String name)
+        {
+            player = new Player(name);
+        }
 
         public void Move()
         {

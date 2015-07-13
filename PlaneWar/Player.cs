@@ -22,7 +22,7 @@ namespace PlaneWar
         private int blood = 100;
         private int plane_x = 175;
         private int plane_y = 500;
-        private String name = "高悦翔";
+        private String name = "unknow";
         private Boolean superGun = false;
 
         public int PLANEX
@@ -57,6 +57,14 @@ namespace PlaneWar
             }
         }
 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+        }
+
         public Boolean SuperGun
         {
             get
@@ -73,12 +81,14 @@ namespace PlaneWar
             }
         }
 
-        public Player()
+        public Player(String name)
         {
             redplane = Resources.planeRedTail;
             notredplane = Resources.plane;
             myplane = notredplane;
             headImage = Resources.head;
+            if ("" != name)
+            this.name = name;
         }
 
         public void checkCoords()//判断飞机的坐标是否飞出窗口

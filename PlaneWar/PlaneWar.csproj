@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="serverConnecter.cs" />
     <Compile Include="BloodBox.cs" />
     <Compile Include="Bomb.cs" />
     <Compile Include="Bullet.cs" />
@@ -207,6 +208,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6e53d84fjw1eswwxtllg1j20hs0zkdhx %282%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

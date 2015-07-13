@@ -11,3 +11,8 @@ C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\bin\Debu
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\zh-Hans\PlaneWar.resources.dll
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.GameForm.resources
 C:\Users\悦翔\documents\visual studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.GameForm.zh-Hans.resources
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\Interop.WMPLib.dll
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\obj\Debug\PlaneWar.csproj.ResolveComReference.cache
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\bin\Debug\Interop.WMPLib.dll
+C:\Users\悦翔\Documents\Visual Studio 2013\Projects\PlaneWar\PlaneWar\bin\Debug\AxInterop.WMPLib.dll
