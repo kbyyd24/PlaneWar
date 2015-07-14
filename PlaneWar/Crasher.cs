@@ -32,7 +32,7 @@ namespace PlaneWar
                         }
                         else
                         {
-                            enemyList[j].Blood = 1;
+                            enemyList[j].Blood = enemyList[j].Blood - 1;
                         }
                     }
                 }

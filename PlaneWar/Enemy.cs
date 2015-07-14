@@ -56,7 +56,7 @@ namespace PlaneWar
             }
             set
             {
-                blood -= value;
+                blood = value;
             }
         }
 
@@ -66,23 +66,19 @@ namespace PlaneWar
             {
                 plane = Resources.fighterYellow;
                 enemy_x = new Random(Guid.NewGuid().GetHashCode()).Next(330);
-                blood = 1;
-                score = 1;
             }
             else if (1 == type)
             {
                 plane = Resources.fighterRed;
                 enemy_x = new Random(Guid.NewGuid().GetHashCode()).Next(332);
-                blood = 2;
-                score = 2;
             }
             else if (2 == type)
             {
                 plane = Resources.fighterGreen;
                 enemy_x = new Random(Guid.NewGuid().GetHashCode()).Next(336);
-                blood = 3;
-                score = 3;
             }
+            blood = type + 1;
+            score = blood;
         }
 
         public void Draw(Graphics g)

@@ -61,6 +61,7 @@ namespace PlaneWar
         public void getBox()
         {
             resetX();
+            boxY = 0;
         }
 
         public void Draw(Graphics g)

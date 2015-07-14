@@ -24,6 +24,7 @@ namespace PlaneWar
         BloodBox box = new BloodBox();
         Crasher crasher = new Crasher();
         Image gameOver = Resources.gameover;
+        public Boolean bulletFlag = true;
 
         public Boolean Blood
         {
@@ -97,34 +98,31 @@ namespace PlaneWar
                     suGun.checkTime(player);
                     if (!player.SuperGun)//是否获得霰弹枪
                     {
-                        //当与前一个子弹距离达到一定值才会产生新子弹
-                        if (0 == bulletList.Count)
+                       if (bulletFlag)
                         {
                             bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
+                            bulletFlag = false;
                         }
                         else
                         {
-                            if (bulletList[bulletList.Count - 1].BulX == player.PLANEX + 15)
-                            {
-                                int i = player.PLANEY - 10 - bulletList[bulletList.Count - 1].BulY;
-                                if (40 < i)
-                                {
-                                    bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
-                                }
-                            }
-                            else
-                            {
-                                bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
-                            }
+                            bulletFlag = true;
                         }
                     }
                     else
                     {
-                        bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
-                        bulletList.Add(new Bullet(player.PLANEX + 6, player.PLANEY - 10, 60, -20));
-                        bulletList.Add(new Bullet(player.PLANEX + 5, player.PLANEY - 10, -60, -20));
-                        bulletList.Add(new Bullet(player.PLANEX + 5, player.PLANEY - 5, -30, -20));
-                        bulletList.Add(new Bullet(player.PLANEX - 5, player.PLANEY - 5, 30, -20));
+                        if (bulletFlag)
+                        {
+                            bulletList.Add(new Bullet(player.PLANEX + 15, player.PLANEY - 10, 90, -20));
+                            bulletList.Add(new Bullet(player.PLANEX + 6, player.PLANEY - 10, 60, -20));
+                            bulletList.Add(new Bullet(player.PLANEX + 5, player.PLANEY - 10, -60, -20));
+                            bulletList.Add(new Bullet(player.PLANEX + 5, player.PLANEY - 5, -30, -20));
+                            bulletList.Add(new Bullet(player.PLANEX - 5, player.PLANEY - 5, 30, -20));
+                            bulletFlag = false;
+                        }
+                        else
+                        {
+                            bulletFlag = true;
+                        }
                     }
                 }
             }

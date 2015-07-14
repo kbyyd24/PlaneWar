@@ -42,7 +42,6 @@ namespace PlaneWar
             player.Draw(e.Graphics);
         }*/
 
-
         private void Game_Paint(object sender, PaintEventArgs e)//调用画图方法
         {
             if (1 == flag && null != game)
@@ -63,6 +62,8 @@ namespace PlaneWar
         private void Game_KeyUp(object sender, KeyEventArgs e)//释放按键
         {
             Keyboard.KeyUp(e.KeyCode);
+            if (null != game)
+            game.bulletFlag = true;
         }
 
         private void Game_KeyDown(object sender, KeyEventArgs e)//按下按键
@@ -120,9 +121,9 @@ namespace PlaneWar
         {
             if ('p' == e.KeyChar || 'P' == e.KeyChar)
             {
-                if (1 == flag || 2 == flag)
+                if (3 != flag)
                 {
-                    flag = 0;
+                    flag = 3;
                 }
                 else
                 {
